@@ -212,12 +212,13 @@
 
     /* Who We Are — specific layout tweaks */
     .slide.two[data-title="Who We Are"] .stage {
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: clamp(24px, 3vw, 48px);
+      grid-template-columns: 1.16fr 0.84fr;
+      gap: clamp(36px, 4vw, 64px);
     }
 
     .slide.two[data-title="Who We Are"] h2 {
-      font-size: clamp(2.8rem, 5vw, 5.2rem);
+      font-size: clamp(2.75rem, 4.1vw, 4.45rem);
+      max-width: 720px;
     }
 
     .slide.two[data-title="Who We Are"] .lead {
@@ -226,6 +227,11 @@
 
     .slide.two[data-title="Who We Are"] ul {
       margin-top: 18px;
+    }
+
+    .slide.two[data-title="Who We Are"] .orbital {
+      align-self: center;
+      min-height: 460px;
     }
 
     /* Events */
@@ -318,10 +324,21 @@
     /* Takeaways */
     .takeaway {
       display: grid;
-      grid-template-columns: 0.85fr 1.15fr;
-      gap: 64px;
+      grid-template-columns: 0.76fr 1.24fr;
+      gap: clamp(44px, 5vw, 72px);
       align-items: center;
-      width: min(1140px, 100%);
+      width: min(1240px, 100%);
+    }
+
+    .takeaway h2 {
+      font-size: clamp(2.7rem, 3.9vw, 4.1rem);
+      max-width: 440px;
+    }
+
+    .takeaway p.lead {
+      max-width: 430px;
+      font-size: clamp(1.08rem, 1.35vw, 1.3rem);
+      line-height: 1.5;
     }
 
     .takeaway-list {
@@ -356,10 +373,11 @@
 
     .flow-title {
       font-family: var(--serif);
-      font-size: clamp(2.7rem, 5.2vw, 5.4rem);
+      font-size: clamp(2.5rem, 4.35vw, 4.55rem);
       letter-spacing: -0.055em;
       color: var(--paper);
       line-height: 1.05;
+      text-wrap: balance;
     }
 
     .flow-title span {
@@ -497,7 +515,7 @@
     }
 
     .stage {
-      width: min(1120px, 100%);
+      width: min(1240px, 100%);
       max-width: 100%;
       transform: scale(var(--fit-scale, 1));
       transform-origin: center center;
@@ -505,7 +523,7 @@
     }
 
     .slide.two .stage {
-      width: min(1180px, 100%);
+      width: min(1240px, 100%);
       display: grid;
       grid-template-columns: 0.95fr 1.05fr;
       gap: clamp(30px, 4.4vw, 72px);
@@ -583,5 +601,3 @@
         to { opacity: 1; transform: translateY(0); }
       }
     }
-
-

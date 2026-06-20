@@ -2,7 +2,7 @@
       --bg: #11100d;
       --bg-2: #1a1612;
       --paper: #eee8dd;
-      --muted: #948c82;
+      --muted: #a39b91;
       --muted-2: #6f6861;
       --line: rgba(238, 232, 221, 0.13);
       --line-2: rgba(238, 232, 221, 0.22);
@@ -88,6 +88,16 @@
     h2 { font-size: clamp(3.7rem, 6.7vw, 7.1rem); max-width: 1120px; }
     h3 { font-size: clamp(1.9rem, 3.3vw, 3.2rem); letter-spacing: -0.045em; }
 
+    /* Content slides use a calmer scale than titles and section dividers. */
+    .slide.standard h2,
+    .slide.two h2 {
+      max-width: none;
+      font-size: clamp(2.8rem, 4.8vw, 5.05rem);
+      line-height: 1.02;
+      letter-spacing: -0.045em;
+      text-wrap: balance;
+    }
+
     .accent { color: var(--copper); }
     .dim { color: rgba(238,232,221,0.28); }
 
@@ -103,6 +113,14 @@
       max-width: 760px;
       font-size: clamp(1.35rem, 2vw, 2rem);
       line-height: 1.44;
+    }
+
+    .slide.standard p.lead,
+    .slide.two p.lead {
+      margin-top: 22px;
+      max-width: 720px;
+      font-size: clamp(1.18rem, 1.6vw, 1.55rem);
+      line-height: 1.5;
     }
 
     ul { margin: 30px 0 0; padding-left: 1.2em; max-width: 760px; }
