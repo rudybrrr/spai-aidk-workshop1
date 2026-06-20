@@ -212,6 +212,7 @@
 
     /* Events */
     .event-list {
+      margin-top: 36px;
       width: min(1000px, 100%);
       display: grid;
       grid-template-columns: repeat(3, 1fr);
