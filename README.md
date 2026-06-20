@@ -1,4 +1,4 @@
-# AI Don't Know — Workshop 1
+# AI Don't Know - Workshop 1
 
 Static HTML/CSS/JavaScript presentation deck for SPAI's first AI Don't Know workshop.
 
@@ -8,18 +8,6 @@ From this directory, run:
 
 ```sh
 npm run dev
-```
-
-Open the local URL printed by the server. No install or build step is required. If you already have another static file server, serve this directory and open `index.html` through it.
-
-## Deploy to Vercel
-
-Import this project directory as a new Vercel project. Select **Other** as the framework preset and leave the build command empty. The site is served directly from the project root.
-
-With the Vercel CLI, run this command from the same directory:
-
-```sh
-vercel
 ```
 
 ## Edit slide content
