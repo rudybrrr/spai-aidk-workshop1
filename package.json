@@ -1,0 +1,10 @@
+{
+  "name": "ai-dont-know-workshop-1",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static SPAI AI Don't Know Workshop 1 slide deck",
+  "scripts": {
+    "dev": "npx --yes serve .",
+    "start": "npx --yes serve ."
+  }
+}

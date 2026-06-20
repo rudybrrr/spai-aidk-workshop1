@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Don't Know — Workshop 1: Python Foundations</title>
+  <link rel="stylesheet" href="./src/styles/globals.css" />
+  <link rel="stylesheet" href="./src/styles/code.css" />
+  <link rel="stylesheet" href="./src/styles/slides.css" />
+</head>
+<body>
+  <div class="grain"></div>
+  <div class="frame"></div>
+  <div class="top-progress"><div class="top-progress-bar" id="topProgress"></div></div>
+
+  <main class="deck">
+    <section class="slide center active" data-footer="AI Don’t Know · SPAI" data-title="Title">
+      <div class="title-stack">
+        <div class="kicker">SPAI Workshop Series</div>
+        <h1>AI Don’t Know</h1>
+        <p class="title-sub">Workshop 1 · Python Foundations<br/>From JavaScript basics to Python for AI, data, and machine learning.</p>
+        <div class="hairline"></div>
+      </div>
+    </section>
+
+    <section class="slide center" data-footer="About SPAI · SPAI" data-title="About SPAI">
+      <div class="section-title">
+        <div class="big-number">01</div>
+        <div class="kicker">About SPAI</div>
+        <h2>Who we are, and what we’ve been building.</h2>
+        <p class="lead">A quick intro before we get into Python.</p>
+      </div>
+    </section>
+
+    <section class="slide two" data-footer="About SPAI · Who We Are" data-title="Who We Are">
+      <div>
+        <div class="kicker">Who we are</div>
+        <h2>SPAI makes <span class="accent">AI more accessible</span> to SP students.</h2>
+        <p class="lead">We run beginner-friendly workshops, events, and learning experiences for students across courses and schools.</p>
+        <ul>
+          <li>Open to students regardless of course or school.</li>
+          <li>Built by students, for students.</li>
+          <li>Focused on practical first exposure, not gatekeeping.</li>
+        </ul>
+      </div>
+      <div class="orbital" aria-label="SPAI community visual">
+        <div class="orbit-core">SPAI</div>
+        <div class="orbit-label ol-1"><b>Workshops</b>Hands-on learning</div>
+        <div class="orbit-label ol-2"><b>Events</b>Explore AI topics</div>
+        <div class="orbit-label ol-3"><b>Community</b>Learn with peers</div>
+        <div class="orbit-label ol-4"><b>Projects</b>Build useful things</div>
+      </div>
+    </section>
+
+    <section class="slide standard" data-footer="About SPAI · Previous Events" data-title="Previous Events">
+      <div>
+        <div class="kicker">Previous events</div>
+        <h2>Learning through hands-on sessions.</h2>
+        <div class="event-list">
+          <div class="event-row">
+            <div class="event-index">01</div>
+            <div class="event-name">Pixels to Perception</div>
+            <p class="event-desc">Beginner-friendly exposure to AI tools and technical learning.</p>
+          </div>
+          <div class="event-row">
+            <div class="event-index">02</div>
+            <div class="event-name">Graphing Impact</div>
+            <p class="event-desc">Using data and visualisation to communicate insights.</p>
+          </div>
+          <div class="event-row">
+            <div class="event-index">03</div>
+            <div class="event-name">n8n</div>
+            <p class="event-desc">A workshop series built around accessible AI learning.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide center" data-footer="Workshop Series · SPAI" data-title="Workshop Series">
+      <div class="section-title">
+        <div class="big-number">02</div>
+        <div class="kicker">Workshop Series</div>
+        <h2>Code <span class="accent">→</span> data <span class="accent">→</span> learning from data.</h2>
+        <p class="lead">Three sessions, one beginner-friendly path from Python to machine learning.</p>
+      </div>
+    </section>
+
+    <section class="slide standard" data-footer="Workshop Series · Outline" data-title="Series Outline">
+      <div>
+        <div class="kicker">Series outline</div>
+        <h2>The full path, in one view.</h2>
+        <div class="outline-table">
+          <div class="outline-row">
+            <div class="date">15 JUL<br/>3–5PM</div>
+            <div class="outline-title">Python Foundations</div>
+            <div class="outline-desc">JavaScript vs Python, syntax, variables, conditionals, loops, lists, dictionaries, functions, and simple practice.</div>
+          </div>
+          <div class="outline-row">
+            <div class="date">22 JUL<br/>3–5PM</div>
+            <div class="outline-title">Data Analytics & Visualisation</div>
+            <div class="outline-desc">pandas, NumPy, matplotlib, and seaborn as a cleaner plotting option, using small sample data.</div>
+          </div>
+          <div class="outline-row">
+            <div class="date">29 JUL<br/>3–5PM</div>
+            <div class="outline-title">Guided ML Demo</div>
+            <div class="outline-desc">A DataCamp-style template where you fill in key blanks and run a basic machine learning workflow.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide standard" data-footer="Workshop Series · Takeaways" data-title="Takeaways">
+      <div class="takeaway">
+        <div>
+          <div class="kicker">Takeaways</div>
+          <h2>What you should leave with.</h2>
+          <p class="lead">This is not meant to make you an expert in three sessions. It is meant to make AI and data feel less mysterious.</p>
+        </div>
+        <div class="takeaway-list">
+          <div class="takeaway-row">
+            <div class="label">W1</div>
+            <p><strong>Python confidence:</strong> read and edit basic Python code without freezing.</p>
+          </div>
+          <div class="takeaway-row">
+            <div class="label">W2</div>
+            <p><strong>Data thinking:</strong> ask simple questions from data and visualise answers.</p>
+          </div>
+          <div class="takeaway-row">
+            <div class="label">W3</div>
+            <p><strong>ML intuition:</strong> understand the basic shape of training and testing a model.</p>
+          </div>
+          <div class="takeaway-row">
+            <div class="label">ALL</div>
+            <p><strong>Big picture:</strong> see how Python, data, and ML connect.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide center" data-footer="Workshop 1 Flow · SPAI" data-title="Workshop 1 Flow Section">
+      <div class="section-title">
+        <div class="big-number">03</div>
+        <div class="kicker">Workshop 1 Flow</div>
+        <h2>Today is about getting comfortable with Python fundamentals.</h2>
+      </div>
+    </section>
+
+    <section class="slide standard" data-footer="Workshop 1 Flow · Today" data-title="Workshop 1 Flow">
+      <div class="flow-line">
+        <div class="kicker">Today’s flow</div>
+        <div class="flow-title">Understand <span>→</span> Translate <span>→</span> Code <span>→</span> Practice <span>→</span> Carry forward</div>
+        <div class="flow-steps">
+          <div class="flow-step"><div class="num">01</div><b>About Python</b><p>Why Python matters for AI and data.</p></div>
+          <div class="flow-step"><div class="num">02</div><b>JS vs Python</b><p>Translate familiar programming ideas.</p></div>
+          <div class="flow-step"><div class="num">03</div><b>Python Basics</b><p>Variables, logic, loops, lists, dictionaries.</p></div>
+          <div class="flow-step"><div class="num">04</div><b>Practice</b><p>Fill code blanks and run a small script.</p></div>
+          <div class="flow-step"><div class="num">05</div><b>Wrap-up</b><p>What carries into Workshop 2.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide center" data-footer="Python + JavaScript · SPAI" data-title="About Python Section">
+      <div class="section-title">
+        <div class="big-number">04</div>
+        <div class="kicker">About Python + JS vs Python</div>
+        <h2>You already know programming ideas. Python writes them differently.</h2>
+      </div>
+    </section>
+
+    <section class="slide two" data-footer="About Python · Why Python" data-title="Why Python">
+      <div>
+        <div class="kicker">About Python</div>
+        <h2>Python is the default language for a lot of AI work.</h2>
+      </div>
+      <div>
+        <p class="lead">It is readable, practical, and surrounded by libraries that make data and machine learning much easier to work with.</p>
+        <div class="pill-row">
+          <span class="pill">pandas</span>
+          <span class="pill">NumPy</span>
+          <span class="pill">matplotlib</span>
+          <span class="pill">seaborn</span>
+          <span class="pill">scikit-learn</span>
+        </div>
+        <div class="note">Today is not about mastering Python. It is about becoming comfortable enough to continue.</div>
+      </div>
+    </section>
+
+    <section class="slide standard" data-footer="JS vs Python · Code Blocks" data-title="Code Blocks">
+      <div>
+        <div class="kicker">JS vs Python</div>
+        <h2>Code blocks</h2>
+        <p class="lead">JavaScript uses curly braces. Python uses colons and indentation.</p>
+        <div class="compare">
+          <div class="code-window javascript">
+            <div class="code-head"><span class="code-label">JavaScript</span></div>
+            <pre><code><span class="kw">if</span> (score >= <span class="numlit">60</span>) {
+  console.log(<span class="str">"Pass"</span>);
+}</code></pre>
+          </div>
+          <div class="code-window python">
+            <div class="code-head"><span class="code-label">Python</span><button class="copy-btn">Copy</button></div>
+            <pre><code><span class="kw">if</span> score >= <span class="numlit">60</span>:
+    <span class="fn">print</span>(<span class="str">"Pass"</span>)</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide standard" data-footer="JS vs Python · Variables" data-title="Variables">
+      <div>
+        <div class="kicker">JS vs Python</div>
+        <h2>Variable declaration</h2>
+        <p class="lead">Python does not use <strong>let</strong>, <strong>const</strong>, or <strong>var</strong>.</p>
+        <div class="compare">
+          <div class="code-window javascript">
+            <div class="code-head"><span class="code-label">JavaScript</span></div>
+            <pre><code><span class="kw">let</span> name = <span class="str">"Ravi"</span>;
+<span class="kw">const</span> score = <span class="numlit">82</span>;
+<span class="kw">var</span> passed = true;</code></pre>
+          </div>
+          <div class="code-window python">
+            <div class="code-head"><span class="code-label">Python</span><button class="copy-btn">Copy</button></div>
+            <pre><code>name = <span class="str">"Ravi"</span>
+score = <span class="numlit">82</span>
+passed = <span class="kw">True</span></code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide standard" data-footer="JS vs Python · Output" data-title="Printing Output">
+      <div>
+        <div class="kicker">JS vs Python</div>
+        <h2>Printing output</h2>
+        <p class="lead"><strong>print()</strong> is Python’s version of <strong>console.log()</strong>.</p>
+        <div class="compare">
+          <div class="code-window javascript">
+            <div class="code-head"><span class="code-label">JavaScript</span></div>
+            <pre><code>console.log(<span class="str">"Hello SPAI!"</span>);</code></pre>
+          </div>
+          <div class="code-window python">
+            <div class="code-head"><span class="code-label">Python</span><button class="copy-btn">Copy</button></div>
+            <pre><code><span class="fn">print</span>(<span class="str">"Hello SPAI!"</span>)</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide standard" data-footer="JS vs Python · Booleans" data-title="Booleans and None">
+      <div>
+        <div class="kicker">JS vs Python</div>
+        <h2>Booleans and missing values</h2>
+        <p class="lead">Python capitalises boolean values and uses <strong>None</strong> for empty or missing values.</p>
+        <div class="compare">
+          <div class="code-window javascript">
+            <div class="code-head"><span class="code-label">JavaScript</span></div>
+            <pre><code><span class="kw">let</span> passed = true;
+<span class="kw">let</span> remarks = null;</code></pre>
+          </div>
+          <div class="code-window python">
+            <div class="code-head"><span class="code-label">Python</span><button class="copy-btn">Copy</button></div>
+            <pre><code>passed = <span class="kw">True</span>
+remarks = <span class="kw">None</span></code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide center" data-footer="Python Basics · SPAI" data-title="Python Basics Section">
+      <div class="section-title">
+        <div class="big-number">05</div>
+        <div class="kicker">Python Basics</div>
+        <h2>The small pieces we need before data and ML.</h2>
+      </div>
+    </section>
+
+    <section class="slide two" data-footer="Python Basics · Data Types" data-title="Data Types">
+      <div>
+        <div class="kicker">Python Basics</div>
+        <h2>Data types</h2>
+        <p class="lead">Python values can be text, numbers, booleans, or empty values.</p>
+      </div>
+      <div class="code-window python">
+        <div class="code-head"><span class="code-label">Python</span><button class="copy-btn">Copy</button></div>
+        <pre><code>name = <span class="str">"Aisha"</span>      <span class="comment"># string</span>
+score = <span class="numlit">88</span>          <span class="comment"># integer</span>
+price = <span class="numlit">2.50</span>        <span class="comment"># float</span>
+passed = <span class="kw">True</span>       <span class="comment"># boolean</span>
+remarks = <span class="kw">None</span>      <span class="comment"># no value yet</span>
+
+<span class="fn">print</span>(name, score, passed)</code></pre>
+      </div>
+    </section>
+
+    <section class="slide two" data-footer="Python Basics · Input" data-title="Input and Conversion">
+      <div>
+        <div class="kicker">Python Basics</div>
+        <h2>Input is text by default</h2>
+        <p class="lead">If you want to calculate with user input, convert it first.</p>
+      </div>
+      <div class="code-window python">
+        <div class="code-head"><span class="code-label">Python</span><button class="copy-btn">Copy</button></div>
+        <pre><code>score_text = <span class="fn">input</span>(<span class="str">"Enter your score: "</span>)
+score = <span class="fn">int</span>(score_text)
+
+<span class="fn">print</span>(score + <span class="numlit">5</span>)</code></pre>
+      </div>
+    </section>
+
+    <section class="slide standard" data-footer="Python Basics · Conditionals" data-title="Conditionals">
+      <div>
+        <div class="kicker">Python Logic</div>
+        <h2>Conditionals</h2>
+        <p class="lead">Conditionals let your program make decisions.</p>
+        <div class="compare" style="grid-template-columns: 1fr;">
+          <div class="code-window python">
+            <div class="code-head"><span class="code-label">Python</span><button class="copy-btn">Copy</button></div>
+            <pre><code>score = <span class="numlit">72</span>
+
+<span class="kw">if</span> score >= <span class="numlit">80</span>:
+    <span class="fn">print</span>(<span class="str">"Excellent"</span>)
+<span class="kw">elif</span> score >= <span class="numlit">60</span>:
+    <span class="fn">print</span>(<span class="str">"Pass"</span>)
+<span class="kw">else</span>:
+    <span class="fn">print</span>(<span class="str">"Try again"</span>)</code></pre>
+          </div>
+        </div>
+        <div class="note">Try it: change the score. Predict the output before running.</div>
+      </div>
+    </section>
+
+    <section class="slide standard" data-footer="Python Basics · Loops" data-title="For Loops">
+      <div>
+        <div class="kicker">Python Logic</div>
+        <h2>For loops</h2>
+        <p class="lead">Use loops when you want to repeat code.</p>
+        <div class="compare">
+          <div class="code-window javascript">
+            <div class="code-head"><span class="code-label">JavaScript</span></div>
+            <pre><code><span class="kw">for</span> (<span class="kw">let</span> i = <span class="numlit">0</span>; i &lt; <span class="numlit">5</span>; i++) {
+  console.log(i);
+}</code></pre>
+          </div>
+          <div class="code-window python">
+            <div class="code-head"><span class="code-label">Python</span><button class="copy-btn">Copy</button></div>
+            <pre><code><span class="kw">for</span> i <span class="kw">in</span> <span class="fn">range</span>(<span class="numlit">5</span>):
+    <span class="fn">print</span>(i)</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide standard" data-footer="Python Basics · Lists" data-title="Lists">
+      <div>
+        <div class="kicker">Python Data Structures</div>
+        <h2>Lists</h2>
+        <p class="lead">Lists store multiple values in order. This matters because data often comes in groups.</p>
+        <div class="compare" style="grid-template-columns: 1fr;">
+          <div class="code-window python">
+            <div class="code-head"><span class="code-label">Python</span><button class="copy-btn">Copy</button></div>
+            <pre><code>scores = [<span class="numlit">72</span>, <span class="numlit">85</span>, <span class="numlit">60</span>, <span class="numlit">91</span>]
+
+<span class="fn">print</span>(scores[<span class="numlit">0</span>])       <span class="comment"># first item</span>
+<span class="fn">print</span>(<span class="fn">len</span>(scores))     <span class="comment"># number of items</span>
+
+scores.append(<span class="numlit">78</span>)
+<span class="fn">print</span>(scores)</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide standard" data-footer="Python Basics · Dictionaries" data-title="Dictionaries">
+      <div>
+        <div class="kicker">Python Data Structures</div>
+        <h2>Dictionaries</h2>
+        <p class="lead">Dictionaries store labelled information using key-value pairs.</p>
+        <div class="compare" style="grid-template-columns: 1fr;">
+          <div class="code-window python">
+            <div class="code-head"><span class="code-label">Python</span><button class="copy-btn">Copy</button></div>
+            <pre><code>student = {
+    <span class="str">"name"</span>: <span class="str">"Aisha"</span>,
+    <span class="str">"course"</span>: <span class="str">"DAAA"</span>,
+    <span class="str">"score"</span>: <span class="numlit">88</span>
+}
+
+<span class="fn">print</span>(student[<span class="str">"name"</span>])
+<span class="fn">print</span>(student[<span class="str">"score"</span>])</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide standard" data-footer="Python Basics · Functions" data-title="Functions">
+      <div>
+        <div class="kicker">Python Organisation</div>
+        <h2>Functions</h2>
+        <p class="lead">Functions let us package repeated logic into reusable blocks.</p>
+        <div class="compare" style="grid-template-columns: 1fr;">
+          <div class="code-window python">
+            <div class="code-head"><span class="code-label">Python</span><button class="copy-btn">Copy</button></div>
+            <pre><code><span class="kw">def</span> <span class="fn">calculate_average</span>(numbers):
+    total = <span class="fn">sum</span>(numbers)
+    average = total / <span class="fn">len</span>(numbers)
+    <span class="kw">return</span> average
+
+scores = [<span class="numlit">72</span>, <span class="numlit">85</span>, <span class="numlit">60</span>, <span class="numlit">91</span>]
+<span class="fn">print</span>(calculate_average(scores))</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide center" data-footer="Practice · SPAI" data-title="Practice Section">
+      <div class="section-title">
+        <div class="big-number">06</div>
+        <div class="kicker">Practice</div>
+        <h2>Fill the blanks. Then run it.</h2>
+      </div>
+    </section>
+
+    <section class="slide standard" data-footer="Practice · Starter" data-title="Practice Task">
+      <div>
+        <div class="kicker">Try it yourself</div>
+        <h2>Class score summary</h2>
+        <p class="lead">Complete the missing parts to calculate the average score and decide if the class passed overall.</p>
+        <div class="compare" style="grid-template-columns: 1fr;">
+          <div class="code-window python">
+            <div class="code-head"><span class="code-label">starter.py</span><button class="copy-btn">Copy</button></div>
+            <pre><code>scores = [<span class="numlit">72</span>, <span class="numlit">85</span>, <span class="numlit">60</span>, <span class="numlit">91</span>, <span class="numlit">45</span>]
+
+<span class="comment"># TODO 1: calculate the average</span>
+average_score = ____ / ____
+
+<span class="fn">print</span>(<span class="str">"Average score:"</span>, average_score)
+
+<span class="comment"># TODO 2: check if the average is at least 60</span>
+<span class="kw">if</span> average_score ____ <span class="numlit">60</span>:
+    <span class="fn">print</span>(<span class="str">"Class passed overall"</span>)
+<span class="kw">else</span>:
+    <span class="fn">print</span>(<span class="str">"Class needs improvement"</span>)</code></pre>
+          </div>
+        </div>
+        <details class="reveal">
+          <summary>Show hint</summary>
+          <p>Use <strong>sum(scores)</strong>, <strong>len(scores)</strong>, and the comparison operator <strong>&gt;=</strong>.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="slide standard" data-footer="Practice · Solution" data-title="Practice Solution">
+      <div>
+        <div class="kicker">Solution</div>
+        <h2>Completed code</h2>
+        <div class="compare" style="grid-template-columns: 1fr;">
+          <div class="code-window python">
+            <div class="code-head"><span class="code-label">solution.py</span><button class="copy-btn">Copy</button></div>
+            <pre><code>scores = [<span class="numlit">72</span>, <span class="numlit">85</span>, <span class="numlit">60</span>, <span class="numlit">91</span>, <span class="numlit">45</span>]
+
+average_score = <span class="fn">sum</span>(scores) / <span class="fn">len</span>(scores)
+
+<span class="fn">print</span>(<span class="str">"Average score:"</span>, average_score)
+
+<span class="kw">if</span> average_score >= <span class="numlit">60</span>:
+    <span class="fn">print</span>(<span class="str">"Class passed overall"</span>)
+<span class="kw">else</span>:
+    <span class="fn">print</span>(<span class="str">"Class needs improvement"</span>)</code></pre>
+          </div>
+        </div>
+        <div class="note">What this uses: list, function calls, arithmetic, variable assignment, conditional logic, indentation.</div>
+      </div>
+    </section>
+
+    <section class="slide center" data-footer="Summary · SPAI" data-title="Summary Section">
+      <div class="section-title">
+        <div class="big-number">07</div>
+        <div class="kicker">Summary of Today</div>
+        <h2>What carries forward into data analytics and ML.</h2>
+      </div>
+    </section>
+
+    <section class="slide standard" data-footer="Summary · Today" data-title="Summary">
+      <div>
+        <div class="kicker">Summary</div>
+        <h2>What you learned today</h2>
+        <div class="summary-table">
+          <div class="summary-row"><b>Python syntax</b><p>Indentation matters. No curly braces needed.</p></div>
+          <div class="summary-row"><b>Variables</b><p>Store values directly with names.</p></div>
+          <div class="summary-row"><b>Lists</b><p>Store multiple values in order.</p></div>
+          <div class="summary-row"><b>Dictionaries</b><p>Store labelled information.</p></div>
+          <div class="summary-row"><b>Functions</b><p>Reuse logic instead of repeating code.</p></div>
+          <div class="summary-row"><b>Libraries</b><p>Add powerful tools for data and AI.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide center" data-footer="AI Don’t Know · SPAI" data-title="Thank You">
+      <div class="section-title">
+        <div class="kicker">Thank you</div>
+        <h2>Python is the first step.</h2>
+        <p class="lead">Next: use Python to understand data with pandas, NumPy, matplotlib, and seaborn.</p>
+      </div>
+    </section>
+  </main>
+
+  <div class="footer">
+    <div class="footer-left" id="footerLabel">AI Don’t Know · SPAI</div>
+    <div class="dots" id="dots"></div>
+    <div class="slide-no" id="slideNo">1 <span>/ 1</span></div>
+  </div>
+
+  <div class="controls">
+    <button class="nav-btn" id="prevBtn">←</button>
+    <button class="nav-btn" id="nextBtn">→</button>
+  </div>
+  <script src="./src/scripts/fitSlides.js" defer></script>
+  <script src="./src/scripts/navigation.js" defer></script>
+  <script src="./src/scripts/copyCode.js" defer></script>
+</body>
+</html>
