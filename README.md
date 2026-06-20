@@ -1,4 +1,4 @@
-# AI Don't Know — Workshop 1
+# AI Don't Know - Workshop 1
 
 Static HTML/CSS/JavaScript presentation deck for SPAI's first AI Don't Know workshop.
 
