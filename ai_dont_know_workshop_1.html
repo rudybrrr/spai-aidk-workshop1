@@ -924,7 +924,7 @@
         <div class="flow-steps">
           <div class="flow-step"><div class="num">01</div><b>About Python</b><p>Why Python matters for AI and data.</p></div>
           <div class="flow-step"><div class="num">02</div><b>JS vs Python</b><p>Translate familiar programming ideas.</p></div>
-          <div class="flow-step"><div class="num">03</div><b>Python Basics</b><p>Variables, logic, loops, lists, dictionaries.</p></div>
+          <div class="flow-step"><div class="num">03</div><b>Python Basics</b><p>Variables, built-in functions, logic, loops, lists.</p></div>
           <div class="flow-step"><div class="num">04</div><b>Practice</b><p>Fill code blanks and run a small script.</p></div>
           <div class="flow-step"><div class="num">05</div><b>Wrap-up</b><p>What carries into Workshop 2.</p></div>
         </div>
@@ -1064,11 +1064,33 @@ remarks = <span class="kw">None</span>      <span class="comment"># no value yet
       </div>
     </section>
 
+    <section class="slide standard" data-footer="Python Basics · Built-in Functions" data-title="Built-in Functions">
+      <div>
+        <div class="kicker">Python Basics</div>
+        <h2>Python already gives you useful functions.</h2>
+        <p class="lead">A function call looks like <strong>name(...)</strong>. The name picks the tool; the value in parentheses is the input.</p>
+        <div class="compare" style="grid-template-columns: 1fr;">
+          <div class="code-window python">
+            <div class="code-head"><span class="code-label">Python</span><button class="copy-btn">Copy</button></div>
+            <pre><code>score_text = <span class="fn">input</span>(<span class="str">"Enter your score: "</span>)
+score = <span class="fn">int</span>(score_text)
+
+scores = [<span class="numlit">72</span>, <span class="numlit">85</span>, <span class="numlit">60</span>, <span class="numlit">91</span>]
+average = <span class="fn">sum</span>(scores) / <span class="fn">len</span>(scores)
+
+<span class="fn">print</span>(<span class="str">"Your score:"</span>, score)
+<span class="fn">print</span>(<span class="str">"Class average:"</span>, average)</code></pre>
+          </div>
+        </div>
+        <div class="note">Built-in means Python provides it already. You can use it without writing <strong>def</strong> first.</div>
+      </div>
+    </section>
+
     <section class="slide two" data-footer="Python Basics · Input" data-title="Input and Conversion">
       <div>
         <div class="kicker">Python Basics</div>
         <h2>Input is text by default</h2>
-        <p class="lead">If you want to calculate with user input, convert it first.</p>
+        <p class="lead">Because <strong>input()</strong> gives back text, use <strong>int()</strong> before doing maths with it.</p>
       </div>
       <div class="code-window python">
         <div class="code-head"><span class="code-label">Python</span><button class="copy-btn">Copy</button></div>
@@ -1166,8 +1188,8 @@ scores.append(<span class="numlit">78</span>)
     <section class="slide standard" data-footer="Python Basics · Functions" data-title="Functions">
       <div>
         <div class="kicker">Python Organisation</div>
-        <h2>Functions</h2>
-        <p class="lead">Functions let us package repeated logic into reusable blocks.</p>
+        <h2>Writing your own functions</h2>
+        <p class="lead">Built-in functions are ready-made. <strong>def</strong> lets you create your own reusable tool.</p>
         <div class="compare" style="grid-template-columns: 1fr;">
           <div class="code-window python">
             <div class="code-head"><span class="code-label">Python</span><button class="copy-btn">Copy</button></div>
@@ -1260,7 +1282,7 @@ average_score = <span class="fn">sum</span>(scores) / <span class="fn">len</span
           <div class="summary-row"><b>Variables</b><p>Store values directly with names.</p></div>
           <div class="summary-row"><b>Lists</b><p>Store multiple values in order.</p></div>
           <div class="summary-row"><b>Dictionaries</b><p>Store labelled information.</p></div>
-          <div class="summary-row"><b>Functions</b><p>Reuse logic instead of repeating code.</p></div>
+          <div class="summary-row"><b>Functions</b><p>Use ready-made tools like <strong>len()</strong> and <strong>sum()</strong>, then write your own with <strong>def</strong>.</p></div>
           <div class="summary-row"><b>Libraries</b><p>Add powerful tools for data and AI.</p></div>
         </div>
       </div>
