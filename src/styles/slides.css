@@ -217,7 +217,7 @@
     }
 
     .slide.two[data-title="Who We Are"] h2 {
-      font-size: clamp(2.75rem, 4.1vw, 4.45rem);
+      font-size: clamp(2.35rem, 3.35vw, 3.65rem);
       max-width: 720px;
     }
 
@@ -309,7 +309,7 @@
 
     .outline-title {
       font-family: var(--serif);
-      font-size: clamp(1.9rem, 3vw, 3.1rem);
+      font-size: clamp(1.55rem, 2.3vw, 2.45rem);
       letter-spacing: -0.045em;
       color: var(--paper);
       line-height: 1;
@@ -317,7 +317,7 @@
 
     .outline-desc {
       color: var(--muted);
-      font-size: clamp(0.98rem, 1.28vw, 1.2rem);
+      font-size: clamp(0.92rem, 1.1vw, 1.08rem);
       line-height: 1.55;
     }
 
@@ -331,13 +331,13 @@
     }
 
     .takeaway h2 {
-      font-size: clamp(2.7rem, 3.9vw, 4.1rem);
+      font-size: clamp(2.25rem, 3.1vw, 3.3rem);
       max-width: 440px;
     }
 
     .takeaway p.lead {
       max-width: 430px;
-      font-size: clamp(1.08rem, 1.35vw, 1.3rem);
+      font-size: clamp(1rem, 1.15vw, 1.15rem);
       line-height: 1.5;
     }
 
@@ -362,7 +362,7 @@
     }
 
     .takeaway-row p {
-      font-size: clamp(1.02rem, 1.35vw, 1.24rem);
+      font-size: clamp(0.95rem, 1.15vw, 1.1rem);
     }
 
     /* Flow */
@@ -373,7 +373,7 @@
 
     .flow-title {
       font-family: var(--serif);
-      font-size: clamp(2.5rem, 4.35vw, 4.55rem);
+      font-size: clamp(2rem, 3.3vw, 3.55rem);
       letter-spacing: -0.055em;
       color: var(--paper);
       line-height: 1.05;
@@ -413,7 +413,7 @@
       border-left: 3px solid var(--copper);
       padding: 14px 0 14px 22px;
       color: var(--muted);
-      font-size: clamp(1rem, 1.35vw, 1.18rem);
+      font-size: clamp(0.95rem, 1.15vw, 1.08rem);
     }
 
     .pill-row {
@@ -452,7 +452,7 @@
 
     .summary-row b {
       font-family: var(--serif);
-      font-size: clamp(1.55rem, 2.4vw, 2.4rem);
+      font-size: clamp(1.3rem, 1.85vw, 1.9rem);
       letter-spacing: -0.04em;
       color: var(--paper);
       font-weight: 600;
@@ -567,11 +567,11 @@
     }
 
     @media (max-height: 760px) {
-      h1 { font-size: clamp(4rem, 8.8vw, 8.8rem); }
-      h2 { font-size: clamp(3rem, 5.7vw, 5.8rem); }
-      h3 { font-size: clamp(1.7rem, 2.7vw, 2.7rem); }
-      p.lead { font-size: clamp(1.15rem, 1.65vw, 1.55rem); }
-      p, li { font-size: clamp(0.98rem, 1.25vw, 1.12rem); }
+      h1 { font-size: clamp(3.8rem, 7.2vw, 7.4rem); }
+      h2 { font-size: clamp(2.7rem, 4.6vw, 4.8rem); }
+      h3 { font-size: clamp(1.5rem, 2.2vw, 2.2rem); }
+      p.lead { font-size: clamp(1.05rem, 1.35vw, 1.3rem); }
+      p, li { font-size: clamp(0.92rem, 1.1vw, 1.02rem); }
       .event-row { min-height: 92px; }
       .flow-step { min-height: 126px; padding: 20px 18px; }
       .summary-row { padding: 14px 0; }

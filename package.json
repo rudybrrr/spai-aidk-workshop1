@@ -4,6 +4,9 @@
   "private": true,
   "description": "Static SPAI AI Don't Know Workshop 1 slide deck",
   "scripts": {
+    "check:alignment": "node scripts/check-notebook-slide-alignment.mjs",
+    "check:standalone-visuals": "node scripts/check-standalone-visual-contract.mjs",
+    "sync:standalone": "node scripts/sync-standalone-slides.mjs",
     "dev": "npx --yes serve .",
     "start": "npx --yes serve ."
   }

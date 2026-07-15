@@ -14,6 +14,15 @@ npm run dev
 
 Slide content and ordering live in `index.html`. Each slide is a `<section class="slide">` inside `<main class="deck">`. Keep the existing class names and `data-footer` attributes when editing content so navigation, fitting, and footer labels continue to work.
 
+`01_AIDK_W1_Starter.ipynb` is the source of truth for workshop code. Every notebook code cell maps to a slide through `data-notebook-cell`. After changing slide content, keep the standalone HTML copy in sync and verify notebook alignment:
+
+```sh
+npm run sync:standalone
+npm run check:alignment
+```
+
+The alignment check verifies that both slide files contain every notebook code cell exactly once, in notebook order, with the exact starter code—including blanks and `TODO` prompts.
+
 Styles are separated by responsibility:
 
 - `src/styles/globals.css`: theme variables, base styles, typography, and page background

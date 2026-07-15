@@ -165,7 +165,7 @@
       </div>
     </section>
 
-    <section class="slide standard" data-footer="Setup - Notebook Tools" data-title="Notebook Tools">
+    <section class="slide standard" data-footer="Setup - Notebook Tools" data-title="Notebook Tools" data-notebook-cell="2">
       <div>
         <div class="kicker">Setup</div>
         <h2>Install the notebook tools once.</h2>
@@ -188,18 +188,12 @@ print("Python is working!")</code></pre>
       </div>
     </section>
 
-    <section class="slide two download-notebook-slide" data-footer="Setup · Download Notebook" data-title="Download Notebook">
-      <div class="stage">
-        <div>
-          <div class="kicker">Workshop file</div>
-          <h2>Download the Python notebook.</h2>
-          <p class="lead">Open this link, then download the workshop notebook from Google Drive before we begin.</p>
-          <a class="download-link" href="https://drive.google.com/file/d/1knsaf_l5A0o7LCVSuprX_x7wObhv3qKA/view?usp=sharing" target="_blank" rel="noopener noreferrer">https://drive.google.com/file/d/1knsaf_l5A0o7LCVSuprX_x7wObhv3qKA/view?usp=sharing</a>
-        </div>
-        <div class="notebook-qr-block">
-          <img class="notebook-qr" src="public/images/notebookdownload.png" alt="QR code for the Python notebook download link" />
-          <p class="qr-caption">Scan to open the link</p>
-        </div>
+    <section class="slide standard download-notebook-slide" data-footer="Setup · Download Notebook" data-title="Download Notebook">
+      <div>
+        <div class="kicker">Workshop file</div>
+        <h2>Download the Python notebook.</h2>
+        <p class="lead">Open this link, then download the workshop notebook from Google Drive before we begin.</p>
+        <a class="download-link" href="https://drive.google.com/file/d/145cV-S3FoM9snWuZYPXGdX6dlu4wIJ8I/view?usp=sharing" target="_blank" rel="noopener noreferrer">https://drive.google.com/file/d/145cV-S3FoM9snWuZYPXGdX6dlu4wIJ8I/view?usp=sharing</a>
       </div>
     </section>
 
@@ -218,8 +212,8 @@ print("Python is working!")</code></pre>
         <div class="flow-steps">
           <div class="flow-step"><div class="num">01</div><b>About Python</b><p>Why Python matters for AI and data.</p></div>
           <div class="flow-step"><div class="num">02</div><b>JS vs Python</b><p>Translate familiar programming ideas.</p></div>
-          <div class="flow-step"><div class="num">03</div><b>Python Basics</b><p>Variables, built-in functions, logic, loops, lists.</p></div>
-          <div class="flow-step"><div class="num">04</div><b>Practice</b><p>Fill code blanks and run a small script.</p></div>
+          <div class="flow-step"><div class="num">03</div><b>Python Basics</b><p>Types, functions, input, logic, loops, lists, and dictionaries.</p></div>
+          <div class="flow-step"><div class="num">04</div><b>Practice</b><p>Complete each notebook prompt, then combine the skills.</p></div>
           <div class="flow-step"><div class="num">05</div><b>Wrap-up</b><p>What carries into Workshop 2.</p></div>
         </div>
       </div>
@@ -233,25 +227,23 @@ print("Python is working!")</code></pre>
       </div>
     </section>
 
-    <section class="slide two" data-footer="About Python · Why Python" data-title="Why Python">
+    <section class="slide two" data-footer="About Python · Why Python" data-title="Why Python" data-notebook-cell="4">
       <div>
         <div class="kicker">About Python</div>
         <h2>Python is the default language for a lot of AI work.</h2>
+        <p class="lead">It is readable and widely used for data, AI, and machine learning.</p>
       </div>
       <div>
-        <p class="lead">It is readable, practical, and surrounded by libraries that make data and machine learning much easier to work with.</p>
-        <div class="pill-row">
-          <span class="pill">pandas</span>
-          <span class="pill">NumPy</span>
-          <span class="pill">matplotlib</span>
-          <span class="pill">seaborn</span>
-          <span class="pill">scikit-learn</span>
+        <div class="code-window python">
+          <div class="code-head"><span class="code-label">Python</span><button class="copy-btn">Copy</button></div>
+          <pre><code>topic = <span class="str">"Python Foundations"</span>
+<span class="fn">print</span>(<span class="str">"Today we are learning:"</span>, topic)</code></pre>
         </div>
         <div class="note">Today is not about mastering Python. It is about becoming comfortable enough to continue.</div>
       </div>
     </section>
 
-    <section class="slide standard" data-footer="JS vs Python · Code Blocks" data-title="Code Blocks">
+    <section class="slide standard" data-footer="JS vs Python · Code Blocks" data-title="Code Blocks" data-notebook-cell="6">
       <div>
         <div class="kicker">JS vs Python</div>
         <h2>Code blocks</h2>
@@ -265,14 +257,16 @@ print("Python is working!")</code></pre>
           </div>
           <div class="code-window python">
             <div class="code-head"><span class="code-label">Python</span><button class="copy-btn">Copy</button></div>
-            <pre><code><span class="kw">if</span> score >= <span class="numlit">60</span>:
+            <pre><code>score = <span class="numlit">72</span>
+
+<span class="kw">if</span> score >= <span class="numlit">60</span>:
     <span class="fn">print</span>(<span class="str">"Pass"</span>)</code></pre>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="slide standard" data-footer="JS vs Python · Variables" data-title="Variables">
+    <section class="slide standard" data-footer="JS vs Python · Variables" data-title="Variables" data-notebook-cell="8">
       <div>
         <div class="kicker">JS vs Python</div>
         <h2>Variable declaration</h2>
@@ -288,13 +282,34 @@ print("Python is working!")</code></pre>
             <div class="code-head"><span class="code-label">Python</span><button class="copy-btn">Copy</button></div>
             <pre><code>name = <span class="str">"Ravi"</span>
 score = <span class="numlit">82</span>
-passed = <span class="kw">True</span></code></pre>
+passed = <span class="kw">True</span>
+
+<span class="fn">print</span>(name, score, passed)</code></pre>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="slide standard" data-footer="JS vs Python · Output" data-title="Printing Output">
+    <section class="slide standard" data-footer="JS vs Python · Variables" data-title="Variables · Your Turn" data-notebook-cell="9">
+      <div>
+        <div class="kicker">Optional notebook prompt</div>
+        <h2>Create and print a course variable.</h2>
+        <p class="lead">Complete this code in the next notebook cell.</p>
+        <div class="compare" style="grid-template-columns: 1fr;">
+          <div class="code-window python">
+            <div class="code-head"><span class="code-label">Your turn</span><button class="copy-btn">Copy</button></div>
+            <pre><code><span class="comment"># Try it out!</span>
+
+<span class="comment"># TODO: Create a variable called course and store your course name inside it</span>
+<span class="comment"># Hint: variable_name = value</span>
+
+<span class="comment"># TODO: Print the course variable</span></code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide standard" data-footer="JS vs Python · Output" data-title="Printing Output" data-notebook-cell="11">
       <div>
         <div class="kicker">JS vs Python</div>
         <h2>Printing output</h2>
@@ -306,13 +321,31 @@ passed = <span class="kw">True</span></code></pre>
           </div>
           <div class="code-window python">
             <div class="code-head"><span class="code-label">Python</span><button class="copy-btn">Copy</button></div>
-            <pre><code><span class="fn">print</span>(<span class="str">"Hello SPAI!"</span>)</code></pre>
+            <pre><code><span class="fn">print</span>(<span class="str">"Hello SPAI!"</span>)
+
+student_name = <span class="str">"Aisha"</span>
+<span class="fn">print</span>(<span class="str">"Student:"</span>, student_name)</code></pre>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="slide standard" data-footer="JS vs Python · Booleans" data-title="Booleans and None">
+    <section class="slide standard" data-footer="JS vs Python · Output" data-title="Printing Output · Your Turn" data-notebook-cell="12">
+      <div>
+        <div class="kicker">Notebook prompt</div>
+        <h2>Fill in the value to print.</h2>
+        <p class="lead">Replace the blank so the cell prints <strong>Moiz</strong>.</p>
+        <div class="compare" style="grid-template-columns: 1fr;">
+          <div class="code-window python">
+            <div class="code-head"><span class="code-label">Your turn</span><button class="copy-btn">Copy</button></div>
+            <pre><code>name = <span class="str">"Moiz"</span>
+<span class="fn">print</span>(_____)</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide standard" data-footer="JS vs Python · Booleans" data-title="Booleans and None" data-notebook-cell="14">
       <div>
         <div class="kicker">JS vs Python</div>
         <h2>Booleans and missing values</h2>
@@ -326,7 +359,10 @@ passed = <span class="kw">True</span></code></pre>
           <div class="code-window python">
             <div class="code-head"><span class="code-label">Python</span><button class="copy-btn">Copy</button></div>
             <pre><code>passed = <span class="kw">True</span>
-remarks = <span class="kw">None</span></code></pre>
+remarks = <span class="kw">None</span>
+
+<span class="fn">print</span>(passed)
+<span class="fn">print</span>(remarks)</code></pre>
           </div>
         </div>
       </div>
@@ -340,7 +376,7 @@ remarks = <span class="kw">None</span></code></pre>
       </div>
     </section>
 
-    <section class="slide two" data-footer="Python Basics · Data Types" data-title="Data Types">
+    <section class="slide two" data-footer="Python Basics · Data Types" data-title="Data Types" data-notebook-cell="16">
       <div>
         <div class="kicker">Python Basics</div>
         <h2>Data types</h2>
@@ -354,25 +390,42 @@ price = <span class="numlit">2.50</span>        <span class="comment"># float</s
 passed = <span class="kw">True</span>       <span class="comment"># boolean</span>
 remarks = <span class="kw">None</span>      <span class="comment"># no value yet</span>
 
-<span class="fn">print</span>(name, score, passed)</code></pre>
+<span class="fn">print</span>(name, score, passed)
+<span class="fn">print</span>(<span class="fn">type</span>(name))
+<span class="fn">print</span>(<span class="fn">type</span>(score))
+<span class="fn">print</span>(<span class="fn">type</span>(price))
+<span class="fn">print</span>(<span class="fn">type</span>(passed))
+<span class="fn">print</span>(<span class="fn">type</span>(remarks))</code></pre>
       </div>
     </section>
 
-    <section class="slide standard" data-footer="Python Basics · Built-in Functions" data-title="Built-in Functions">
+    <section class="slide standard" data-footer="Python Basics · Data Types" data-title="Data Types · Your Turn" data-notebook-cell="17">
+      <div>
+        <div class="kicker">Notebook prompt</div>
+        <h2>Check the variable’s data type.</h2>
+        <p class="lead">Fill in the blank with the variable whose type you want to inspect.</p>
+        <div class="compare" style="grid-template-columns: 1fr;">
+          <div class="code-window python">
+            <div class="code-head"><span class="code-label">Your turn</span><button class="copy-btn">Copy</button></div>
+            <pre><code>student_score = <span class="numlit">95</span>
+<span class="fn">print</span>(<span class="fn">type</span>(_____))</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide standard" data-footer="Python Basics · Built-in Functions" data-title="Built-in Functions" data-notebook-cell="19">
       <div>
         <div class="kicker">Python Basics</div>
         <h2>Python already gives you useful functions.</h2>
-        <p class="lead"><strong>input()</strong>, <strong>int()</strong>, <strong>sum()</strong>, <strong>len()</strong>, and <strong>print()</strong> are built-in Python functions. The value in parentheses is the input.</p>
+        <p class="lead"><strong>len()</strong> and <strong>sum()</strong> are built-in tools Python already gives you.</p>
         <div class="compare" style="grid-template-columns: 1fr;">
           <div class="code-window python">
             <div class="code-head"><span class="code-label">Python</span><button class="copy-btn">Copy</button></div>
-            <pre><code>score_text = <span class="fn">input</span>(<span class="str">"Enter your score: "</span>)
-score = <span class="fn">int</span>(score_text)
-
-scores = [<span class="numlit">72</span>, <span class="numlit">85</span>, <span class="numlit">60</span>, <span class="numlit">91</span>]
+            <pre><code>scores = [<span class="numlit">72</span>, <span class="numlit">85</span>, <span class="numlit">60</span>, <span class="numlit">91</span>]
 average = <span class="fn">sum</span>(scores) / <span class="fn">len</span>(scores)
 
-<span class="fn">print</span>(<span class="str">"Your score:"</span>, score)
+<span class="fn">print</span>(<span class="str">"Number of scores:"</span>, <span class="fn">len</span>(scores))
 <span class="fn">print</span>(<span class="str">"Class average:"</span>, average)</code></pre>
           </div>
         </div>
@@ -380,7 +433,24 @@ average = <span class="fn">sum</span>(scores) / <span class="fn">len</span>(scor
       </div>
     </section>
 
-    <section class="slide two" data-footer="Python Basics · Input" data-title="Input and Conversion">
+    <section class="slide standard" data-footer="Python Basics · Built-in Functions" data-title="Built-in Functions · Your Turn" data-notebook-cell="20">
+      <div>
+        <div class="kicker">Notebook prompt</div>
+        <h2>Choose the correct built-in functions.</h2>
+        <p class="lead">Fill both blanks, then run the cell to calculate the average.</p>
+        <div class="compare" style="grid-template-columns: 1fr;">
+          <div class="code-window python">
+            <div class="code-head"><span class="code-label">Your turn</span><button class="copy-btn">Copy</button></div>
+            <pre><code>scores = [<span class="numlit">70</span>, <span class="numlit">80</span>, <span class="numlit">90</span>]
+total = _____(scores)
+count = _____(scores)
+<span class="fn">print</span>(total / count)</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide two" data-footer="Python Basics · Input" data-title="Input and Conversion" data-notebook-cell="22">
       <div>
         <div class="kicker">Python Basics</div>
         <h2>Input is text by default</h2>
@@ -388,14 +458,31 @@ average = <span class="fn">sum</span>(scores) / <span class="fn">len</span>(scor
       </div>
       <div class="code-window python">
         <div class="code-head"><span class="code-label">Python</span><button class="copy-btn">Copy</button></div>
-        <pre><code>score_text = <span class="fn">input</span>(<span class="str">"Enter your score: "</span>)
+        <pre><code>score_text = <span class="str">"75"</span>
 score = <span class="fn">int</span>(score_text)
 
 <span class="fn">print</span>(score + <span class="numlit">5</span>)</code></pre>
       </div>
     </section>
 
-    <section class="slide standard" data-footer="Python Basics · Conditionals" data-title="Conditionals">
+    <section class="slide standard" data-footer="Python Basics · Input" data-title="Input and Conversion · Your Turn" data-notebook-cell="23">
+      <div>
+        <div class="kicker">Notebook prompt</div>
+        <h2>Ask for input, convert it, and use it.</h2>
+        <p class="lead">Write all three lines described in the notebook cell.</p>
+        <div class="compare" style="grid-template-columns: 1fr;">
+          <div class="code-window python">
+            <div class="code-head"><span class="code-label">Your turn</span><button class="copy-btn">Copy</button></div>
+            <pre><code><span class="comment"># TODO: Ask the user for their score using input()</span>
+<span class="comment"># TODO: Convert the answer into an integer</span>
+<span class="comment"># TODO: Print the score plus 10</span>
+<span class="comment"># Hint: int(...) converts text to a whole number</span></code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide standard" data-footer="Python Basics · Conditionals" data-title="Conditionals" data-notebook-cell="25">
       <div>
         <div class="kicker">Python Logic</div>
         <h2>Conditionals</h2>
@@ -417,7 +504,26 @@ score = <span class="fn">int</span>(score_text)
       </div>
     </section>
 
-    <section class="slide standard" data-footer="Python Basics · Loops" data-title="For Loops">
+    <section class="slide standard" data-footer="Python Basics · Conditionals" data-title="Conditionals · Your Turn" data-notebook-cell="26">
+      <div>
+        <div class="kicker">Notebook prompt</div>
+        <h2>Complete the conditional.</h2>
+        <p class="lead">Fill the comparison operator and the missing branch keyword.</p>
+        <div class="compare" style="grid-template-columns: 1fr;">
+          <div class="code-window python">
+            <div class="code-head"><span class="code-label">Your turn</span><button class="copy-btn">Copy</button></div>
+            <pre><code>score = <span class="numlit">58</span>
+
+<span class="kw">if</span> score _____ <span class="numlit">60</span>:
+    <span class="fn">print</span>(<span class="str">"Pass"</span>)
+_____:
+    <span class="fn">print</span>(<span class="str">"Try again"</span>)</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide standard" data-footer="Python Basics · Loops" data-title="For Loops" data-notebook-cell="28">
       <div>
         <div class="kicker">Python Logic</div>
         <h2>For loops</h2>
@@ -432,13 +538,34 @@ score = <span class="fn">int</span>(score_text)
           <div class="code-window python">
             <div class="code-head"><span class="code-label">Python</span><button class="copy-btn">Copy</button></div>
             <pre><code><span class="kw">for</span> i <span class="kw">in</span> <span class="fn">range</span>(<span class="numlit">5</span>):
-    <span class="fn">print</span>(i)</code></pre>
+    <span class="fn">print</span>(i)
+
+names = [<span class="str">"Aisha"</span>, <span class="str">"Ben"</span>, <span class="str">"Chloe"</span>]
+<span class="kw">for</span> name <span class="kw">in</span> names:
+    <span class="fn">print</span>(<span class="str">"Hello"</span>, name)</code></pre>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="slide standard" data-footer="Python Basics · Lists" data-title="Lists">
+    <section class="slide standard" data-footer="Python Basics · Loops" data-title="For Loops · Your Turn" data-notebook-cell="29">
+      <div>
+        <div class="kicker">Notebook prompt</div>
+        <h2>Print every student name.</h2>
+        <p class="lead">Write the loop requested underneath the list.</p>
+        <div class="compare" style="grid-template-columns: 1fr;">
+          <div class="code-window python">
+            <div class="code-head"><span class="code-label">Your turn</span><button class="copy-btn">Copy</button></div>
+            <pre><code>students = [<span class="str">"Aisha"</span>, <span class="str">"Ben"</span>, <span class="str">"Chloe"</span>]
+
+<span class="comment"># TODO: Use a for loop to print each student name</span>
+<span class="comment"># Hint: for one_student in students:</span></code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide standard" data-footer="Python Basics · Lists" data-title="Lists" data-notebook-cell="31">
       <div>
         <div class="kicker">Python Data Structures</div>
         <h2>Lists</h2>
@@ -448,17 +575,38 @@ score = <span class="fn">int</span>(score_text)
             <div class="code-head"><span class="code-label">Python</span><button class="copy-btn">Copy</button></div>
             <pre><code>scores = [<span class="numlit">72</span>, <span class="numlit">85</span>, <span class="numlit">60</span>, <span class="numlit">91</span>]
 
-<span class="fn">print</span>(scores[<span class="numlit">0</span>])       <span class="comment"># first item</span>
-<span class="fn">print</span>(<span class="fn">len</span>(scores))     <span class="comment"># number of items</span>
+<span class="fn">print</span>(scores[<span class="numlit">0</span>])
+<span class="fn">print</span>(<span class="fn">len</span>(scores))
 
 scores.append(<span class="numlit">78</span>)
-<span class="fn">print</span>(scores)</code></pre>
+<span class="fn">print</span>(scores)
+
+<span class="kw">for</span> score <span class="kw">in</span> scores:
+    <span class="fn">print</span>(score)</code></pre>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="slide standard" data-footer="Python Basics · Dictionaries" data-title="Dictionaries">
+    <section class="slide standard" data-footer="Python Basics · Lists" data-title="Lists · Your Turn" data-notebook-cell="32">
+      <div>
+        <div class="kicker">Notebook prompt</div>
+        <h2>Add, access, and print list values.</h2>
+        <p class="lead">Complete all three TODO instructions in the notebook.</p>
+        <div class="compare" style="grid-template-columns: 1fr;">
+          <div class="code-window python">
+            <div class="code-head"><span class="code-label">Your turn</span><button class="copy-btn">Copy</button></div>
+            <pre><code>student_names = [<span class="str">"Aisha"</span>, <span class="str">"Ben"</span>]
+
+<span class="comment"># TODO: Add one more student name to the list</span>
+<span class="comment"># TODO: Print the first student name</span>
+<span class="comment"># TODO: Print the full list</span></code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide standard" data-footer="Python Basics · Dictionaries" data-title="Dictionaries" data-notebook-cell="34">
       <div>
         <div class="kicker">Python Data Structures</div>
         <h2>Dictionaries</h2>
@@ -479,7 +627,27 @@ scores.append(<span class="numlit">78</span>)
       </div>
     </section>
 
-    <section class="slide standard" data-footer="Python Basics · Functions" data-title="Functions">
+    <section class="slide standard" data-footer="Python Basics · Dictionaries" data-title="Dictionaries · Your Turn" data-notebook-cell="35">
+      <div>
+        <div class="kicker">Notebook prompt</div>
+        <h2>Choose the dictionary key to print.</h2>
+        <p class="lead">Fill the blank so the cell prints Ben’s course.</p>
+        <div class="compare" style="grid-template-columns: 1fr;">
+          <div class="code-window python">
+            <div class="code-head"><span class="code-label">Your turn</span><button class="copy-btn">Copy</button></div>
+            <pre><code>student = {
+    <span class="str">"name"</span>: <span class="str">"Ben"</span>,
+    <span class="str">"course"</span>: <span class="str">"DISM"</span>,
+    <span class="str">"score"</span>: <span class="numlit">76</span>
+}
+
+<span class="fn">print</span>(student[_____])</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide standard" data-footer="Python Basics · Functions" data-title="Functions" data-notebook-cell="37">
       <div>
         <div class="kicker">Python Organisation</div>
         <h2>Writing your own functions</h2>
@@ -499,65 +667,98 @@ scores = [<span class="numlit">72</span>, <span class="numlit">85</span>, <span 
       </div>
     </section>
 
+    <section class="slide standard" data-footer="Python Basics · Functions" data-title="Functions · Your Turn" data-notebook-cell="38">
+      <div>
+        <div class="kicker">Notebook prompt</div>
+        <h2>Fill in the passing score.</h2>
+        <p class="lead">Complete the comparison inside the function, then run it.</p>
+        <div class="compare" style="grid-template-columns: 1fr;">
+          <div class="code-window python">
+            <div class="code-head"><span class="code-label">Your turn</span><button class="copy-btn">Copy</button></div>
+            <pre><code><span class="kw">def</span> <span class="fn">check_pass</span>(score):
+    <span class="kw">if</span> score >= _____:
+        <span class="kw">return</span> <span class="str">"Pass"</span>
+    <span class="kw">else</span>:
+        <span class="kw">return</span> <span class="str">"Try again"</span>
+
+<span class="fn">print</span>(check_pass(<span class="numlit">72</span>))</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="slide center" data-footer="Practice · SPAI" data-title="Practice Section">
       <div class="section-title">
         <div class="big-number">06</div>
         <div class="kicker">Practice</div>
-        <h2>Fill the blanks. Then run it.</h2>
-        <p class="lead">Attempt the practice in <strong>01_AIDK_W1_Starter.ipynb</strong>.</p>
+        <h2>Fill it in. Write it. Build it.</h2>
+        <p class="lead">Work through all three questions in <strong>01_AIDK_W1_Starter.ipynb</strong>.</p>
       </div>
     </section>
 
-    <section class="slide standard" data-footer="Practice · Starter" data-title="Practice Task">
+    <section class="slide standard" data-footer="Practice · Question 1" data-title="Practice Question 1" data-notebook-cell="40">
       <div>
-        <div class="kicker">Try it yourself</div>
-        <h2>Class score summary</h2>
-        <p class="lead">Complete the missing parts to calculate the average score and decide if the class passed overall.</p>
-        <div class="note">Attempt this practice in <strong>01_AIDK_W1_Starter.ipynb</strong>.</div>
+        <div class="kicker">Practice 1</div>
+        <h2>Complete a class score summary</h2>
+        <p class="lead">Fill every blank to calculate the class average and assign the correct status.</p>
         <div class="compare" style="grid-template-columns: 1fr;">
           <div class="code-window python">
             <div class="code-head"><span class="code-label">starter.py</span><button class="copy-btn">Copy</button></div>
             <pre><code>scores = [<span class="numlit">72</span>, <span class="numlit">85</span>, <span class="numlit">60</span>, <span class="numlit">91</span>, <span class="numlit">45</span>]
 
-<span class="comment"># TODO 1: calculate the average</span>
+total_score = ____(scores)
+number_of_scores = ____(scores)
 average_score = ____ / ____
 
-<span class="fn">print</span>(<span class="str">"Average score:"</span>, average_score)
+<span class="kw">if</span> average_score ____ <span class="numlit">80</span>:
+    status = <span class="str">"Excellent"</span>
+____ average_score ____ <span class="numlit">60</span>:
+    status = <span class="str">"Pass"</span>
+____:
+    status = <span class="str">"Needs support"</span>
 
-<span class="comment"># TODO 2: check if the average is at least 60</span>
-<span class="kw">if</span> average_score ____ <span class="numlit">60</span>:
-    <span class="fn">print</span>(<span class="str">"Class passed overall"</span>)
-<span class="kw">else</span>:
-    <span class="fn">print</span>(<span class="str">"Class needs improvement"</span>)</code></pre>
+<span class="fn">print</span>(<span class="str">"Average:"</span>, average_score)
+<span class="fn">print</span>(<span class="str">"Status:"</span>, status)</code></pre>
           </div>
         </div>
-        <details class="reveal">
-          <summary>Show hint</summary>
-          <p>Use <strong>sum(scores)</strong>, <strong>len(scores)</strong>, and the comparison operator <strong>&gt;=</strong>.</p>
-        </details>
+        <div class="note"><strong>Expected output:</strong> Average: 70.6 &nbsp;·&nbsp; Status: Pass</div>
       </div>
     </section>
 
-    <section class="slide standard" data-footer="Practice · Solution" data-title="Practice Solution">
+    <section class="slide standard" data-footer="Practice · Question 2" data-title="Practice Question 2" data-notebook-cell="42">
       <div>
-        <div class="kicker">Solution</div>
-        <h2>Completed code</h2>
+        <div class="kicker">Practice 2</div>
+        <h2>Write a result loop</h2>
+        <p class="lead">Loop through every score and print <strong>Excellent</strong>, <strong>Pass</strong>, or <strong>Needs support</strong> beside it.</p>
         <div class="compare" style="grid-template-columns: 1fr;">
           <div class="code-window python">
-            <div class="code-head"><span class="code-label">solution.py</span><button class="copy-btn">Copy</button></div>
+            <div class="code-head"><span class="code-label">starter.py</span><button class="copy-btn">Copy</button></div>
             <pre><code>scores = [<span class="numlit">72</span>, <span class="numlit">85</span>, <span class="numlit">60</span>, <span class="numlit">91</span>, <span class="numlit">45</span>]
 
-average_score = <span class="fn">sum</span>(scores) / <span class="fn">len</span>(scores)
-
-<span class="fn">print</span>(<span class="str">"Average score:"</span>, average_score)
-
-<span class="kw">if</span> average_score >= <span class="numlit">60</span>:
-    <span class="fn">print</span>(<span class="str">"Class passed overall"</span>)
-<span class="kw">else</span>:
-    <span class="fn">print</span>(<span class="str">"Class needs improvement"</span>)</code></pre>
+<span class="comment"># Write your loop and conditionals below.</span></code></pre>
           </div>
         </div>
-        <div class="note">What this uses: list, function calls, arithmetic, variable assignment, conditional logic, indentation.</div>
+        <div class="note"><strong>Rules:</strong> Excellent ≥ 80 &nbsp;·&nbsp; Pass ≥ 60 &nbsp;·&nbsp; Otherwise Needs support<br/><strong>Expected:</strong> 72 Pass &nbsp;·&nbsp; 85 Excellent &nbsp;·&nbsp; 60 Pass &nbsp;·&nbsp; 91 Excellent &nbsp;·&nbsp; 45 Needs support</div>
+      </div>
+    </section>
+
+    <section class="slide standard" data-footer="Practice · Question 3" data-title="Practice Question 3" data-notebook-cell="44">
+      <div>
+        <div class="kicker">Practice 3</div>
+        <h2>Build a student summary</h2>
+        <p class="lead">Write <strong>summarise_student(student)</strong> to calculate the average, classify the result, and print the name, average, and status.</p>
+        <div class="compare" style="grid-template-columns: 1fr;">
+          <div class="code-window python">
+            <div class="code-head"><span class="code-label">starter.py</span><button class="copy-btn">Copy</button></div>
+            <pre><code>student = {
+    <span class="str">"name"</span>: <span class="str">"Aisha"</span>,
+    <span class="str">"scores"</span>: [<span class="numlit">88</span>, <span class="numlit">73</span>, <span class="numlit">91</span>]
+}
+
+<span class="comment"># Write summarise_student(student) and call it below.</span></code></pre>
+          </div>
+        </div>
+        <div class="note"><strong>Rules:</strong> Excellent ≥ 80 &nbsp;·&nbsp; Pass ≥ 60 &nbsp;·&nbsp; Otherwise Needs support<br/><strong>Expected:</strong> Name: Aisha &nbsp;·&nbsp; Average: 84.0 &nbsp;·&nbsp; Status: Excellent</div>
       </div>
     </section>
 
@@ -575,11 +776,11 @@ average_score = <span class="fn">sum</span>(scores) / <span class="fn">len</span
         <h2>What you learned today</h2>
         <div class="summary-table">
           <div class="summary-row"><b>Python syntax</b><p>Indentation matters. No curly braces needed.</p></div>
-          <div class="summary-row"><b>Variables</b><p>Store values directly with names.</p></div>
-          <div class="summary-row"><b>Lists</b><p>Store multiple values in order.</p></div>
-          <div class="summary-row"><b>Dictionaries</b><p>Store labelled information.</p></div>
+          <div class="summary-row"><b>Values and input</b><p>Use variables, data types, built-in functions, and input conversion.</p></div>
+          <div class="summary-row"><b>Logic and repetition</b><p>Make decisions with conditionals and repeat work with loops.</p></div>
+          <div class="summary-row"><b>Data structures</b><p>Store ordered values in lists and labelled information in dictionaries.</p></div>
           <div class="summary-row"><b>Functions</b><p>Use ready-made tools like <strong>len()</strong> and <strong>sum()</strong>, then write your own with <strong>def</strong>.</p></div>
-          <div class="summary-row"><b>Libraries</b><p>Add powerful tools for data and AI.</p></div>
+          <div class="summary-row"><b>Next workshop</b><p>Use pandas, NumPy, matplotlib, and seaborn to understand data.</p></div>
         </div>
       </div>
     </section>
